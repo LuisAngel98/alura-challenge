@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura challenge</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -15,20 +16,24 @@
         <div>
             <textarea name="inputText" id="inputText" placeholder="Ingrese el texto aquí"></textarea>
         </div>
-        <p>
+        <div class="alert">
             <img src="./assets/Vector.svg" alt="Vector">
-            Solo letras minúsculas y sin acentos
-        </p>
-        <div>
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+            <p class="alert-text">
+                Solo letras minúsculas y sin acentos
+            </p>
         </div>
-        <div>
+        <div class="container-buttons">
+            <button class="btn btn-encriptar">Encriptar</button>
+            <button class="btn btn-desencriptar">Desencriptar</button>
+        </div>
+        <!-- CONTAINER  1 -->
+        <div class="container-warning">
             <strong>Ningún mensaje fue encontrado</strong>
             <span>Ingresa el texto que desees encriptar o desencriptar.</span>
         </div>
-        <div>
-            <textarea name="resultText" id="resultText" placeholder="" disabled></textarea>
+        <!-- CONTAINER 2 -->
+        <div class="container-result">
+            <textarea name="resultText" id="resultText" placeholder=""></textarea>
             <button>Copiar</button>
         </div>
     </main>
