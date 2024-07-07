@@ -23,21 +23,20 @@
             </p>
         </div>
         <div class="container-buttons">
-            <button class="btn btn-encriptar">Encriptar</button>
-            <button class="btn btn-desencriptar">Desencriptar</button>
+            <button id="btnEncrypt" class="btn btn-encriptar">Encriptar</button>
+            <button id="btnDecrypt" class="btn btn-desencriptar">Desencriptar</button>
         </div>
         <!-- CONTAINER  1 -->
-        <div class="container-warning">
+        <div id="container-warning" class="container-warning">
             <strong>Ningún mensaje fue encontrado</strong>
             <span>Ingresa el texto que desees encriptar o desencriptar.</span>
         </div>
         <!-- CONTAINER 2 -->
-        <div class="container-result">
+        <div id="container-result" class="container-result hidden">
             <textarea name="resultText" id="resultText" placeholder=""></textarea>
             <button>Copiar</button>
         </div>
     </main>
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
-
 </html>
