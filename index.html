@@ -13,25 +13,27 @@
         <img src="./assets/Top.svg" alt="Logo">
     </header>
     <main>
-        <div>
-            <textarea name="inputText" id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="container-left">
+            <div>
+                <textarea name="inputText" id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="alert">
+                <img src="./assets/Vector.svg" alt="Vector">
+                <p class="alert-text">
+                    Solo letras minúsculas y sin acentos
+                </p>
+            </div>
+            <div class="container-buttons">
+                <button id="btnEncrypt" class="btn btn-encriptar">Encriptar</button>
+                <button id="btnDecrypt" class="btn btn-desencriptar">Desencriptar</button>
+            </div>
         </div>
-        <div class="alert">
-            <img src="./assets/Vector.svg" alt="Vector">
-            <p class="alert-text">
-                Solo letras minúsculas y sin acentos
-            </p>
-        </div>
-        <div class="container-buttons">
-            <button id="btnEncrypt" class="btn btn-encriptar">Encriptar</button>
-            <button id="btnDecrypt" class="btn btn-desencriptar">Desencriptar</button>
-        </div>
-        <!-- CONTAINER  1 -->
+        <!-- CONTAINER warning 1 -->
         <div id="container-warning" class="container-warning">
             <strong>Ningún mensaje fue encontrado</strong>
             <span>Ingresa el texto que desees encriptar o desencriptar.</span>
         </div>
-        <!-- CONTAINER 2 -->
+        <!-- CONTAINER result 2 -->
         <div id="container-result" class="container-result hidden">
             <textarea name="resultText" id="resultText" placeholder=""></textarea>
             <button id="btnCopy">Copiar</button>
