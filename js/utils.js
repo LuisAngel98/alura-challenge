@@ -1,8 +1,28 @@
+const rulesToEncrypt = {
+  a: "ai",
+  e: "enter",
+  i: "ines",
+  o: "ober",
+  u: "ufat",
+};
+const rulesToDecrypt = {
+  ai: "a",
+  enter: "e",
+  ines: "i",
+  ober: "o",
+  ufat: "u",
+};
+
 function encrypt(data) {
-  return data + " encrypt";
+  let text = data.replace(/[aeiou]/g, (vowel) => rulesToEncrypt[vowel]);
+  return text;
 }
 function decrypt(encryptedData) {
-  return encryptedData + " decrypt";
+  let text = encryptedData.replace(
+    /ai|enter|ines|ober|ufat/g,
+    (textDecrypt) => rulesToDecrypt[textDecrypt]
+  );
+  return text;
 }
 function validateInput(inputText) {
   const containerWarning = document.getElementById("container-warning");

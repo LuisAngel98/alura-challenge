@@ -89,9 +89,12 @@ button {
 }
 
 .btn-desencriptar {
-  background-color: white;
+  background-color: var(--light-blue-100);
   color: var(--dark-blue-300);
   border: 1px solid var(--dark-blue-300);
+}
+.btn-desencriptar:hover {
+  background-color: #d8dfe8;
 }
 
 /*CONTAINER  1*/
