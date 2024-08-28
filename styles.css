@@ -160,7 +160,7 @@ button {
     flex: 1;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   body {
     display: flex;
     gap: 3rem;
